@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/math-base-tools-lucaspoly",
+  "version": "0.0.0",
+  "description": "Evaluate a Lucas polynomial.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-tools-lucaspoly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "polynomial",
+    "eval",
+    "evaluate",
+    "poly",
+    "polyval",
+    "evalpoly",
+    "fibonacci",
+    "negalucas",
+    "lucas",
+    "fibo",
+    "fib",
+    "number"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
