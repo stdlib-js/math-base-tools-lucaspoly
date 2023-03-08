@@ -75,30 +75,20 @@ L_{-n}(x) = (-1)^{n} L_n(x)
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-tools-lucaspoly
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var lucaspoly = require( '@stdlib/math-base-tools-lucaspoly' );
+import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@esm/index.mjs';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@esm/index.mjs';
 ```
 
 #### lucaspoly( n, x )
@@ -145,8 +135,13 @@ v = polyval( 2.0 ); // => 2^5 + 5*2^3 + 5*2
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var lucaspoly = require( '@stdlib/math-base-tools-lucaspoly' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@esm/index.mjs';
 
 var i;
 
@@ -154,6 +149,10 @@ var i;
 for ( i = -76; i < 77; i++ ) {
     console.log( 'L_%d = %d', i, lucaspoly( i, 1.0 ) );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -184,7 +183,7 @@ for ( i = -76; i < 77; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -250,9 +249,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly
+[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly/tree/esm
 
-[@stdlib/math/base/tools/fibpoly]: https://github.com/stdlib-js/math-base-tools-fibpoly
+[@stdlib/math/base/tools/fibpoly]: https://github.com/stdlib-js/math-base-tools-fibpoly/tree/esm
 
 <!-- </related-links> -->
 
