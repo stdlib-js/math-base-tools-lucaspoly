@@ -30,10 +30,14 @@ A [Lucas polynomial][fibonacci-polynomials] is expressed according to the follow
 
 <!-- <equation class="equation" label="eq:lucas_polynomial" align="center" raw="L_n(x) = \begin{cases}2 & \textrm{if}\ n = 0\\x & \textrm{if}\ n = 1\\x \cdot L_{n-1}(x) + L_{n-2}(x) & \textrm{if}\ n \geq 2\end{cases}" alt="Lucas polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="L_n(x) = \begin{cases}2 &amp; \textrm{if}\ n = 0\\x &amp; \textrm{if}\ n = 1\\x \cdot L_{n-1}(x) + L_{n-2}(x) &amp; \textrm{if}\ n \geq 2\end{cases}" data-equation="eq:lucas_polynomial">
+```math
+L_n(x) = \begin{cases}2 & \textrm{if}\ n = 0\\x & \textrm{if}\ n = 1\\x \cdot L_{n-1}(x) + L_{n-2}(x) & \textrm{if}\ n \geq 2\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="L_n(x) = \begin{cases}2 &amp; \textrm{if}\ n = 0\\x &amp; \textrm{if}\ n = 1\\x \cdot L_{n-1}(x) + L_{n-2}(x) &amp; \textrm{if}\ n \geq 2\end{cases}" data-equation="eq:lucas_polynomial">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_lucas_polynomial.svg" alt="Lucas polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,10 +45,14 @@ Alternatively, if `L(n,k)` is the coefficient of `x^k` in `L_n(x)`, then
 
 <!-- <equation class="equation" label="eq:lucas_polynomial_sum" align="center" raw="L_n(x) = \sum_{k = 0}^n L(n,k) x^k" alt="Lucas polynomial expressed as a sum."> -->
 
-<div class="equation" align="center" data-raw-text="L_n(x) = \sum_{k = 0}^n L(n,k) x^k" data-equation="eq:lucas_polynomial_sum">
+```math
+L_n(x) = \sum_{k = 0}^n L(n,k) x^k
+```
+
+<!-- <div class="equation" align="center" data-raw-text="L_n(x) = \sum_{k = 0}^n L(n,k) x^k" data-equation="eq:lucas_polynomial_sum">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_lucas_polynomial_sum.svg" alt="Lucas polynomial expressed as a sum.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -52,10 +60,14 @@ We can extend [Lucas polynomials][fibonacci-polynomials] to negative `n` using t
 
 <!-- <equation class="equation" label="eq:negalucas_polynomial" align="center" raw="L_{-n}(x) = (-1)^{n} L_n(x)" alt="NegaLucas polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="L_{-n}(x) = (-1)^{n} L_n(x)" data-equation="eq:negalucas_polynomial">
+```math
+L_{-n}(x) = (-1)^{n} L_n(x)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="L_{-n}(x) = (-1)^{n} L_n(x)" data-equation="eq:negalucas_polynomial">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_negalucas_polynomial.svg" alt="NegaLucas polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -63,38 +75,30 @@ We can extend [Lucas polynomials][fibonacci-polynomials] to negative `n` using t
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-tools-lucaspoly
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-lucaspoly = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var lucaspoly = require( 'path/to/vendor/umd/math-base-tools-lucaspoly/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.lucaspoly;
-})();
-</script>
+var lucaspoly = require( '@stdlib/math-base-tools-lucaspoly' );
 ```
 
 #### lucaspoly( n, x )
@@ -141,13 +145,8 @@ v = polyval( 2.0 ); // => 2^5 + 5*2^3 + 5*2
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var lucaspoly = require( '@stdlib/math-base-tools-lucaspoly' );
 
 var i;
 
@@ -155,11 +154,6 @@ var i;
 for ( i = -76; i < 77; i++ ) {
     console.log( 'L_%d = %d', i, lucaspoly( i, 1.0 ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -234,7 +228,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -256,9 +250,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly/tree/umd
+[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly
 
-[@stdlib/math/base/tools/fibpoly]: https://github.com/stdlib-js/math-base-tools-fibpoly/tree/umd
+[@stdlib/math/base/tools/fibpoly]: https://github.com/stdlib-js/math-base-tools-fibpoly
 
 <!-- </related-links> -->
 
