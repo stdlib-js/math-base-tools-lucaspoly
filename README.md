@@ -93,13 +93,13 @@ L_{-n}(x) = (-1)^{n} L_n(x)
 ## Usage
 
 ```javascript
-import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@deno/mod.js';
+import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.1-deno/mod.js';
 ```
 
 #### lucaspoly( n, x )
@@ -147,7 +147,7 @@ v = polyval( 2.0 ); // => 2^5 + 5*2^3 + 5*2
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@deno/mod.js';
+import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.1-deno/mod.js';
 
 var i;
 
