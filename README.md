@@ -93,13 +93,18 @@ L_{-n}(x) = (-1)^{n} L_n(x)
 ## Usage
 
 ```javascript
+import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-tools-lucaspoly/tags). For example,
+
+```javascript
 import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.1-esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@esm/index.mjs';
 ```
 
 #### lucaspoly( n, x )
@@ -152,7 +157,7 @@ v = polyval( 2.0 ); // => 2^5 + 5*2^3 + 5*2
 <body>
 <script type="module">
 
-import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.1-esm/index.mjs';
+import lucaspoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@esm/index.mjs';
 
 var i;
 
