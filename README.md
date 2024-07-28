@@ -95,7 +95,7 @@ L_{-n}(x) = (-1)^{n} L_n(x)
 To use in Observable,
 
 ```javascript
-lucaspoly = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@umd/browser.js' )
+lucaspoly = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.2-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -107,7 +107,7 @@ var lucaspoly = require( 'path/to/vendor/umd/math-base-tools-lucaspoly/index.js'
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.2-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -168,7 +168,7 @@ v = polyval( 2.0 ); // => 2^5 + 5*2^3 + 5*2
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-lucaspoly@v0.2.2-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
