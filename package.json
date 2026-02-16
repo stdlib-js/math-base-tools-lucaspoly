@@ -41,7 +41,7 @@
     "@stdlib/math-base-special-binomcoef": "^0.3.1",
     "@stdlib/math-base-special-ceil": "^0.2.3",
     "@stdlib/math-base-special-floor": "^0.2.4",
-    "@stdlib/math-base-special-pow": "^0.3.0",
+    "@stdlib/math-base-special-pow": "^0.3.1",
     "@stdlib/math-base-tools-evalpoly": "^0.2.3",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3"
@@ -51,11 +51,11 @@
     "@stdlib/math-base-special-lucas": "^0.3.1",
     "@stdlib/math-base-special-negalucas": "^0.3.1",
     "@stdlib/math-base-special-round": "^0.3.1",
-    "@stdlib/random-base-randu": "^0.2.2",
+    "@stdlib/random-base-randu": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
